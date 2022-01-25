@@ -1,0 +1,50 @@
+<h1>Formulário</h1>
+
+<!--Incluindo usuário usando um post nessa URL-->
+<form method="POST">
+    <input type="hidden" name="id" value="3">
+    <input type="text" name="nome">
+    <!--atributo a ser mostrado no terminal-->
+    <input type="password" name="senha">
+    <!--segundo campo, senha-->
+    <textarea name="bio" id="" cols="30" rows="10"></textarea>
+    <!--botoes-->
+    <div>
+        <input type="radio" name="tipo" value="admin"> Admin
+        <input type="radio" name="tipo" value="Regular"> Regular
+        <input type="radio" name="tipo" value="Professor"> Professor
+    </div>
+    <div>
+        <input type="checkbox" name="ativo"> Ativo
+    </div>
+    <select name="estado">
+        <option value="ac">Acre</option>
+        <option value="ba">Bahia</option>
+        <option value="pr">Paraná</option>
+    </select>
+
+    <select name="interesses" multiple size="5">
+        <option value="js">Javascript</option>
+        <option value="java">Java</option>
+        <option value="php">PHP</option>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+    </select>
+
+    <button formaction="http://localhost:3003/usuarios">Incluir</button>
+    <button formaction="http://localhost:3003/usuarios/3">Alterar</button>
+</form>
+<!--para mostrar o botao na mesma linha do texto-->
+<style>
+    input,
+    textarea,
+    select {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    input[type=radio],
+    input[type=checkbox] {
+        display: inline;
+    }
+</style>
