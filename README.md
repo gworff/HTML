@@ -1,3 +1,3 @@
 # HTML
 
-Exercícios e exemplos de HTML para guardar para a posteridade.
+Exercícios e exemplos de HTML e CSS para guardar para a posteridade.
